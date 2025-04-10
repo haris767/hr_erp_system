@@ -65,7 +65,7 @@ end
 gem "jsbundling-rails", "~> 1.3"
 
 gem "foreman", github: "ddollar/foreman"
-gem "bootstrap", "~> 5.1.3"
+gem "bootstrap", "~> 5.3.3"
 gem "jquery-rails"
 
 gem "devise", "~> 4.9"
