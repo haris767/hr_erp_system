@@ -1,0 +1,12 @@
+<div class="container mt-4">
+  <h2><%= @employee.full_name %></h2>
+  <p><strong>Job Title:</strong> <%= @employee.job_title %></p>
+  <p><strong>Department:</strong> <%= @employee.department %></p>
+  <p><strong>Email:</strong> <%= @employee.email %></p>
+  <p><strong>Phone:</strong> <%= @employee.phone %></p>
+  <p><strong>Address:</strong> <%= @employee.address %></p>
+  <p><strong>ERP Role:</strong> <%= @employee.erp_role %></p>
+
+  <%= link_to 'Edit', edit_employee_path(@employee), class: "btn btn-warning" %>
+  <%= link_to 'Back', employees_path, class: "btn btn-secondary" %>
+</div>

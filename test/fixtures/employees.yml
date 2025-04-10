@@ -1,0 +1,59 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  full_name: MyString
+  father_name: MyString
+  employee_number: MyString
+  national_id: MyString
+  dob: 2025-04-10
+  gender: MyString
+  grade: MyString
+  phone: MyString
+  email: MyString
+  address: MyText
+  personal_number: MyString
+  company_number: MyString
+  assets_details: MyText
+  department: MyString
+  job_title: MyString
+  employment_type: MyString
+  hire_date: 2025-04-10
+  work_location: MyString
+  manager: MyString
+  job_status: MyString
+  blood_group: MyString
+  employees_service: MyString
+  salary_structure: MyString
+  payment_method: MyString
+  bank_name: MyString
+  bank_account_number: MyString
+  erp_role: MyString
+
+two:
+  full_name: MyString
+  father_name: MyString
+  employee_number: MyString
+  national_id: MyString
+  dob: 2025-04-10
+  gender: MyString
+  grade: MyString
+  phone: MyString
+  email: MyString
+  address: MyText
+  personal_number: MyString
+  company_number: MyString
+  assets_details: MyText
+  department: MyString
+  job_title: MyString
+  employment_type: MyString
+  hire_date: 2025-04-10
+  work_location: MyString
+  manager: MyString
+  job_status: MyString
+  blood_group: MyString
+  employees_service: MyString
+  salary_structure: MyString
+  payment_method: MyString
+  bank_name: MyString
+  bank_account_number: MyString
+  erp_role: MyString

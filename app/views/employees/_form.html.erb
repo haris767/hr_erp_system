@@ -1,0 +1,167 @@
+<%= form_with(model: employee, data: { turbo: false }, class: "row g-3") do |f| %>
+  <div class="col-md-6">
+    <%= f.label :full_name %>
+    <%= f.text_field :full_name, class: "form-control" %>
+    <%= f.object.errors[:full_name].any? ? content_tag(:div, f.object.errors[:full_name].join(", "), class: 'text-danger') : '' %>
+  </div>
+
+  <div class="col-md-6">
+    <%= f.label :father_name %>
+    <%= f.text_field :father_name, class: "form-control" %>
+    <%= f.object.errors[:father_name].any? ? content_tag(:div, f.object.errors[:father_name].join(", "), class: 'text-danger') : '' %>
+  </div>
+
+  <div class="col-md-4 d-none">
+    <%= f.label :employee_number %>
+    <%= f.text_field :employee_number, class: "form-control" %>
+    <%= f.object.errors[:employee_number].any? ? content_tag(:div, f.object.errors[:employee_number].join(", "), class: 'text-danger') : '' %>
+  </div>
+
+  <div class="col-md-4">
+    <%= f.label :national_id %>
+    <%= f.text_field :national_id, class: "form-control" %>
+    <%= f.object.errors[:national_id].any? ? content_tag(:div, f.object.errors[:national_id].join(", "), class: 'text-danger') : '' %>
+  </div>
+
+  <div class="col-md-4">
+    <%= f.label :dob %>
+    <%= f.date_field :dob, class: "form-control" %>
+    <%= f.object.errors[:dob].any? ? content_tag(:div, f.object.errors[:dob].join(", "), class: 'text-danger') : '' %>
+  </div>
+
+  <div class="col-md-3">
+    <%= f.label :gender %>
+    <%= f.select :gender, ['Male', 'Female', 'Other'], {}, class: "form-select" %>
+    <%= f.object.errors[:gender].any? ? content_tag(:div, f.object.errors[:gender].join(", "), class: 'text-danger') : '' %>
+  </div>
+
+  <div class="col-md-3">
+    <%= f.label :grade %>
+    <%= f.select :grade, ['SP-S1','SP-S2','SP-S3','SP-O','SP-M'], {}, class: "form-select" %>
+    <%= f.object.errors[:grade].any? ? content_tag(:div, f.object.errors[:grade].join(", "), class: 'text-danger') : '' %>
+  </div>
+
+  <div class="col-md-3">
+    <%= f.label :phone %>
+    <%= f.text_field :phone, class: "form-control" %>
+    <%= f.object.errors[:phone].any? ? content_tag(:div, f.object.errors[:phone].join(", "), class: 'text-danger') : '' %>
+  </div>
+
+  <div class="col-md-3">
+    <%= f.label :email %>
+    <%= f.email_field :email, class: "form-control" %>
+    <%= f.object.errors[:email].any? ? content_tag(:div, f.object.errors[:email].join(", "), class: 'text-danger') : '' %>
+  </div>
+
+  <div class="col-12">
+    <%= f.label :address %>
+    <%= f.text_area :address, class: "form-control", rows: 2 %>
+    <%= f.object.errors[:address].any? ? content_tag(:div, f.object.errors[:address].join(", "), class: 'text-danger') : '' %>
+  </div>
+
+  <div class="col-md-4">
+    <%= f.label :personal_number %>
+    <%= f.text_field :personal_number, class: "form-control" %>
+    <%= f.object.errors[:personal_number].any? ? content_tag(:div, f.object.errors[:personal_number].join(", "), class: 'text-danger') : '' %>
+  </div>
+
+  <div class="col-md-4">
+    <%= f.label :company_number %>
+    <%= f.text_field :company_number, class: "form-control" %>
+    <%= f.object.errors[:company_number].any? ? content_tag(:div, f.object.errors[:company_number].join(", "), class: 'text-danger') : '' %>
+  </div>
+
+  <div class="col-md-4">
+    <%= f.label :assets_details %>
+    <%= f.select :assets_details, ['Laptop', 'keyboard', 'Mouse','Mobile' ], {}, class: "form-select" %>
+    <%= f.object.errors[:assets_details].any? ? content_tag(:div, f.object.errors[:assets_details].join(", "), class: 'text-danger') : '' %>
+  </div>
+
+  <div class="col-md-4">
+    <%= f.label :department %>
+    <%= f.text_field :department, class: "form-control" %>
+    <%= f.object.errors[:department].any? ? content_tag(:div, f.object.errors[:department].join(", "), class: 'text-danger') : '' %>
+  </div>
+
+  <div class="col-md-4">
+    <%= f.label :job_title %>
+    <%= f.text_field :job_title, class: "form-control" %>
+    <%= f.object.errors[:job_title].any? ? content_tag(:div, f.object.errors[:job_title].join(", "), class: 'text-danger') : '' %>
+  </div>
+
+  <div class="col-md-4">
+    <%= f.label :employment_type %>
+    <%= f.select :employment_type, ['Permanent', 'Contract', 'Temporary'], {}, class: "form-select" %>
+    <%= f.object.errors[:employment_type].any? ? content_tag(:div, f.object.errors[:employment_type].join(", "), class: 'text-danger') : '' %>
+  </div>
+
+  <div class="col-md-4">
+    <%= f.label :hire_date %>
+    <%= f.date_field :hire_date, class: "form-control" %>
+    <%= f.object.errors[:hire_date].any? ? content_tag(:div, f.object.errors[:hire_date].join(", "), class: 'text-danger') : '' %>
+  </div>
+
+  <div class="col-md-4">
+    <%= f.label :work_location %>
+    <%= f.select :work_location, ['Office','Remote Location'], {}, class: "form-select" %>
+    <%= f.object.errors[:work_location].any? ? content_tag(:div, f.object.errors[:work_location].join(", "), class: 'text-danger') : '' %>
+  </div>
+
+  <div class="col-md-4">
+    <%= f.label :manager %>
+    <%= f.text_field :manager, class: "form-control" %>
+    <%= f.object.errors[:manager].any? ? content_tag(:div, f.object.errors[:manager].join(", "), class: 'text-danger') : '' %>
+  </div>
+
+  <div class="col-md-4">
+    <%= f.label :job_status %>
+    <%= f.select :job_status, ['Active', 'Inactive', 'On Leave'], {}, class: "form-select" %>
+    <%= f.object.errors[:job_status].any? ? content_tag(:div, f.object.errors[:job_status].join(", "), class: 'text-danger') : '' %>
+  </div>
+
+  <div class="col-md-4">
+    <%= f.label :blood_group %>
+    <%= f.select :blood_group, ['A', 'A+', 'B', 'B+', 'AB', 'AB+', 'O', 'O+', 'A-', 'B-', 'AB-', 'O-'], {}, class: "form-select" %>
+    <%= f.object.errors[:blood_group].any? ? content_tag(:div, f.object.errors[:blood_group].join(", "), class: 'text-danger') : '' %>
+  </div>
+
+  <div class="col-md-4">
+    <%= f.label :employees_service %>
+    <%= f.text_field :employees_service, class: "form-control" %>
+    <%= f.object.errors[:employees_service].any? ? content_tag(:div, f.object.errors[:employees_service].join(", "), class: 'text-danger') : '' %>
+  </div>
+
+  <div class="col-md-4">
+    <%= f.label :salary_structure %>
+    <%= f.text_field :salary_structure, class: "form-control" %>
+    <%= f.object.errors[:salary_structure].any? ? content_tag(:div, f.object.errors[:salary_structure].join(", "), class: 'text-danger') : '' %>
+  </div>
+
+  <div class="col-md-4">
+    <%= f.label :payment_method %>
+    <%= f.select :payment_method, ['Bank Transfer', 'Cash', 'Check'], {}, class: "form-select" %>
+    <%= f.object.errors[:payment_method].any? ? content_tag(:div, f.object.errors[:payment_method].join(", "), class: 'text-danger') : '' %>
+  </div>
+
+  <div class="col-md-4">
+    <%= f.label :bank_name %>
+    <%= f.text_field :bank_name, class: "form-control" %>
+    <%= f.object.errors[:bank_name].any? ? content_tag(:div, f.object.errors[:bank_name].join(", "), class: 'text-danger') : '' %>
+  </div>
+
+  <div class="col-md-4">
+    <%= f.label :bank_account_number %>
+    <%= f.text_field :bank_account_number, class: "form-control" %>
+    <%= f.object.errors[:bank_account_number].any? ? content_tag(:div, f.object.errors[:bank_account_number].join(", "), class: 'text-danger') : '' %>
+  </div>
+
+  <div class="col-md-4">
+    <%= f.label :erp_role %>
+    <%= f.select :erp_role, ['Admin', 'HR', 'Employee'], {}, class: "form-select" %>
+    <%= f.object.errors[:erp_role].any? ? content_tag(:div, f.object.errors[:erp_role].join(", "), class: 'text-danger') : '' %>
+  </div>
+
+  <div class="col-12 mt-3">
+    <%= f.submit class: "btn btn-success" %>
+  </div>
+<% end %>
