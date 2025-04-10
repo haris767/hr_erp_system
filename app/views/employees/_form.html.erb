@@ -1,4 +1,5 @@
 <%= form_with(model: employee, data: { turbo: false }, class: "row g-3") do |f| %>
+<h1> Section 1: Personal Information</h1>
   <div class="col-md-6">
     <%= f.label :full_name %>
     <%= f.text_field :full_name, class: "form-control" %>
@@ -77,6 +78,8 @@
     <%= f.object.errors[:assets_details].any? ? content_tag(:div, f.object.errors[:assets_details].join(", "), class: 'text-danger') : '' %>
   </div>
 
+<h2> Section 2:  Job & Employment Details</h2>
+
   <div class="col-md-4">
     <%= f.label :department %>
     <%= f.text_field :department, class: "form-control" %>
@@ -131,6 +134,8 @@
     <%= f.object.errors[:employees_service].any? ? content_tag(:div, f.object.errors[:employees_service].join(", "), class: 'text-danger') : '' %>
   </div>
 
+<h3>Section 3: Payroll & Compensation</h3>
+
   <div class="col-md-4">
     <%= f.label :salary_structure %>
     <%= f.text_field :salary_structure, class: "form-control" %>
@@ -154,6 +159,8 @@
     <%= f.text_field :bank_account_number, class: "form-control" %>
     <%= f.object.errors[:bank_account_number].any? ? content_tag(:div, f.object.errors[:bank_account_number].join(", "), class: 'text-danger') : '' %>
   </div>
+
+<h4> Section 4: System Access & Role Assignment</h4>
 
   <div class="col-md-4">
     <%= f.label :erp_role %>

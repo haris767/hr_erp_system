@@ -413,6 +413,7 @@ DEPENDENCIES
   solid_cable
   solid_cache
   solid_queue
+  sprockets-rails
   stimulus-rails
   thruster
   turbo-rails

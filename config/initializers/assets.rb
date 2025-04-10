@@ -11,3 +11,5 @@ Rails.application.config.assets.paths << Rails.root.join("vendor", "assets")
 # folder are already added.
 # Rails.application.config.assets.precompile +% admin.js admin.css)
 Rails.application.config.assets.precompile + %w[adminlte/dist/css/*.css adminlte/dist/js/*.js]
+Rails.application.config.assets.paths << Rails.root.join("app", "assets", "fonts")
+Rails.application.config.assets.precompile += %w[ webfonts/* ]

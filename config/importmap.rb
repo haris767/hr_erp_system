@@ -8,3 +8,4 @@ pin_all_from "app/javascript/controllers", under: "controllers"
 pin "bootstrap" # @5.3.5
 pin "@popperjs/core", to: "@popperjs--core.js" # @2.11.8
 pin "admin-lte" # @4.0.0
+pin "jquery.min.js" # @3.5.1

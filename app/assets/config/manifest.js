@@ -7,4 +7,6 @@
  //= link controllers/hello_controller.js
   //= link controllers/index.js
 //= link_directory ../stylesheets .css
- 
+//= link jquery.min.js.js
+//= link adminlte/adminlte.min.css
+//= link fontawesome/all.min.css
