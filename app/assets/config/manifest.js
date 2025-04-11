@@ -8,5 +8,6 @@
   //= link controllers/index.js
 //= link_directory ../stylesheets .css
 //= link jquery.min.js.js
-//= link adminlte/adminlte.min.css
-//= link fontawesome/all.min.css
+//= link adminlte.min.css
+//= link all.min.css
+//= link adminlte.min.js
